@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <!-- сторінка -->
+
+  <body class="page">
+    <!-- heder -->
+    <header class="header">
+      <div class="header__container">
+        <!-- Web-studio Logo -->
+        <a class="logo logo--site-nav" href="./index.html">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+
+        <div class="header__menu">
+          <!-- Site navigation block -->
+          <nav class="header__site-nav">
+            <ul class="header__site-nav-list">
+              <li class="header__site-nav-item">
+                <a class="header__site-nav-link" href="./index.html">Студія</a>
+              </li>
+
+              <li class="header__site-nav-item">
+                <a
+                  class="header__site-nav-link header__site-nav-link--current"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+
+              <li class="header__site-nav-item">
+                <a class="header__site-nav-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Web-studio contacts -->
+          <ul class="header__contact-list">
+            <li class="header__contact-list-item">
+              <a class="header__contact-list-link" href="mailto:info@devstudio.com">
+                <svg class="header__contact-list-icon header__contact-list-icon--envelope">
+                  <use href="./img/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+
+            <li class="header__contact-list-item">
+              <a class="header__contact-list-link" href="tel:+380961111111">
+                <svg class="header__contact-list-icon header__contact-list-icon--phone">
+                  <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu">
+          <!-- Site navigation block -->
+          <nav class="mobile-menu__site-nav">
+            <ul class="mobile-menu__site-nav-list">
+              <li class="mobile-menu__site-nav-item">
+                <a
+                  class="mobile-menu__site-nav-link mobile-menu__site-nav-link--current"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+
+              <li class="mobile-menu__site-nav-item">
+                <a class="mobile-menu__site-nav-link" href="./portfolio.html">Портфоліо</a>
+              </li>
+
+              <li class="mobile-menu__site-nav-item">
+                <a class="mobile-menu__site-nav-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Web-studio contacts -->
+          <ul class="mobile-menu__contact-list">
+            <li class="mobile-menu__contact-list-item mobile-menu__contact-list-item--phone">
+              <a class="mobile-menu__contact-list-link" href="tel:+380961111111">
+                <svg class="mobile-menu__contact-list-icon mobile-menu__contact-list-icon--phone">
+                  <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__contact-list-item mobile-menu__contact-list-item--email">
+              <a class="mobile-menu__contact-list-link" href="mailto:info@devstudio.com">
+                <svg
+                  class="mobile-menu__contact-list-icon mobile-menu__contact-list-icon--envelope"
+                >
+                  <use href="./img/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__soc-net-list">
+            <li class="mobile-menu__soc-net-item">
+              <a class="mobile-menu__soc-net-link" target="_blank" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__soc-net-item">
+              <a class="mobile-menu__soc-net-link" target="_blank" href="https://www.twitter.com/"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__soc-net-item">
+              <a class="mobile-menu__soc-net-link" target="_blank" href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__soc-net-item">
+              <a class="mobile-menu__soc-net-link" target="_blank" href="https://www.linkedin.com/"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="mobile-menu__btn">
+          <svg width="40" height="40" aria-label="Кнопка мобільного меню">
+            <use
+              class="mobile-menu__icon--open"
+              aria-expanded="false"
+              href="./img/symbol-defs.svg#icon-burger"
+            ></use>
+            <use
+              class="mobile-menu__icon--close"
+              href="./img/symbol-defs.svg#icon-close-black"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- List of projects -->
+      <section class="projects">
+        <div class="projects__container">
+          <!-- Branch filter -->
+          <ul class="filter filter--projects">
+            <li class="filter__item">
+              <button class="filter__button--active" type="button">Усі</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button--passive" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button--passive" type="button">Додатки</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button--passive" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button--passive" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- This h1 will be invisible -->
+          <h1 class="projects__title">Наші роботи</h1>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol1-desk-370.jpg 370w,
+                        ./img/projects/portfol1-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol1-tab-354.jpg 354w,
+                        ./img/projects/portfol1-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol1-mob-450.jpg 450w,
+                        ./img/projects/portfol1-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol1-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Технокряк"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Технокряк</h3>
+                  <p class="card-link__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol2-desk-370.jpg 370w,
+                        ./img/projects/portfol2-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol2-tab-354.jpg 354w,
+                        ./img/projects/portfol2-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol2-mob-450.jpg 450w,
+                        ./img/projects/portfol2-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol2-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="card-link__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol3-desk-370.jpg 370w,
+                        ./img/projects/portfol3-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol3-tab-354.jpg 354w,
+                        ./img/projects/portfol3-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol3-mob-450.jpg 450w,
+                        ./img/projects/portfol3-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol3-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Ресторан Seafood"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Ресторан Seafood</h3>
+                  <p class="card-link__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol4-desk-370.jpg 370w,
+                        ./img/projects/portfol4-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol4-tab-354.jpg 354w,
+                        ./img/projects/portfol4-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol4-mob-450.jpg 450w,
+                        ./img/projects/portfol4-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol4-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Проєкт Prime"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Проєкт Prime</h3>
+                  <p class="card-link__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol5-desk-370.jpg 370w,
+                        ./img/projects/portfol5-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol5-tab-354.jpg 354w,
+                        ./img/projects/portfol5-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol5-mob-450.jpg 450w,
+                        ./img/projects/portfol5-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol5-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Проєкт Boxes"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Проєкт Boxes</h3>
+                  <p class="card-link__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol6-desk-370.jpg 370w,
+                        ./img/projects/portfol6-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol6-tab-354.jpg 354w,
+                        ./img/projects/portfol6-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol6-mob-450.jpg 450w,
+                        ./img/projects/portfol6-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol6-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Inspiration has no Borders"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Inspiration has no Borders</h3>
+                  <p class="card-link__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol7-desk-370.jpg 370w,
+                        ./img/projects/portfol7-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol7-tab-354.jpg 354w,
+                        ./img/projects/portfol7-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol7-mob-450.jpg 450w,
+                        ./img/projects/portfol7-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol7-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Видання Limited Edition"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Видання Limited Edition</h3>
+                  <p class="card-link__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol8-desk-370.jpg 370w,
+                        ./img/projects/portfol8-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol8-tab-354.jpg 354w,
+                        ./img/projects/portfol8-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol8-mob-450.jpg 450w,
+                        ./img/projects/portfol8-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol8-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Проєкт LAB"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Проєкт LAB</h3>
+                  <p class="card-link__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/projects/portfol9-desk-370.jpg 370w,
+                        ./img/projects/portfol9-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol9-tab-354.jpg 354w,
+                        ./img/projects/portfol9-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./img/projects/portfol9-mob-450.jpg 450w,
+                        ./img/projects/portfol9-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      class="team-list__img"
+                      src="./img/projects/portfol9-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Growing Business"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Growing Business</h3>
+                  <p class="card-link__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__section footer__section--contacts">
+          <!-- Web-studio Logo -->
+          <a class="logo logo--footer" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio
+          </a>
+          <!-- Web-studio contacts -->
+          <address>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a
+                  class="contacts__link contacts__link--gmaps"
+                  href="https://goo.gl/maps/LqEMvfZFrGtLSNi77"
+                  target="_blank"
+                  >м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__section footer__section--social-nets">
+          <h3 class="footer__subscribe-title">Приєднуйтесь</h3>
+          <ul class="social-net-list social-net-list--inline footer__social-net-list">
+            <li class="item">
+              <a
+                class="social-net-list__link social-net-list__link--dark"
+                href="https://www.instagram.com/"
+              >
+                <svg class="social-net-list__icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="social-net-list__link social-net-list__link--dark"
+                href="https://www.twitter.com/"
+              >
+                <svg class="social-net-list__icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="social-net-list__link social-net-list__link--dark"
+                href="https://www.facebook.com/"
+              >
+                <svg class="social-net-list__icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="social-net-list__link social-net-list__link--dark"
+                href="https://www.linkedin.com/"
+              >
+                <svg class="social-net-list__icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section footer__section--subscribe-form">
+          <form class="subscribe-form">
+            <label class="subscribe-form__label">
+              <h4 class="subscribe-form__title">Підпишіться на розсилку</h4>
+              <div class="subscribe-form__wrapper">
+                <input
+                  class="subscribe-form__input"
+                  type="email"
+                  placeholder="E-mail"
+                  name="email"
+                />
+                <button class="button button--active button--subscribe-form" type="submit">
+                  Підписатися
+                  <svg class="button__icon button__icon--end" width="24" height="24">
+                    <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- modalka -->
+    <div class="backdrop backdrop__is-hidden" data-modal>
+      <div class="user-data-modal-window">
+        <button class="user-data-modal-window__btn-close" type="button" data-modal-close>
+          <svg class="user-data-modal-window__icon-close" width="30" height="30">
+            <use href="./img/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="user-data__form" name="form-user">
+          <h2 class="user-data-modal-window__title">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <label class="user-data-modal-window__field">
+            <input class="user-data-modal-window__input" type="text" name="user-name" />
+            <svg class="user-data-modal-window__icon" width="18" height="18">
+              <use href="./img/symbol-defs.svg#icon-person"></use>
+            </svg>
+            <span class="user-data-modal-window__input-title">Ім'я</span>
+          </label>
+
+          <label class="user-data-modal-window__field">
+            <input class="user-data-modal-window__input" type="tel" name="user-phone" />
+            <svg class="user-data-modal-window__icon" width="18" height="18">
+              <use href="./img/symbol-defs.svg#icon-tel"></use>
+            </svg>
+            <span class="user-data-modal-window__input-title">Телефон</span>
+          </label>
+
+          <label class="user-data-modal-window__field">
+            <input class="user-data-modal-window__input" type="text" name="user-email" />
+            <svg class="user-data-modal-window__icon" width="18" height="18">
+              <use href="./img/symbol-defs.svg#icon-mailblack"></use>
+            </svg>
+            <span class="user-data-modal-window__input-title">Пошта</span>
+          </label>
+
+          <label class="user-data-modal-window__field">
+            <textarea
+              class="user-data-modal-window__comment"
+              name="comment"
+              id="modal-comment"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+            <span class="user-data-modal-window__input-title">Коментар</span>
+          </label>
+
+          <div class="user-data-modal-window__policy-field">
+            <label class="user-data-modal-window__agreement-label">
+              <input
+                class="user-data-modal-window__standart-checkbox"
+                type="checkbox"
+                name="policy"
+                value="agree"
+              />
+              Погоджуюся з розсилкою та приймаю
+              <a class="user-data-modal-window__license-agreement-link" href="">Умови договору</a>
+              <svg
+                class="user-data-modal-window__icon-checkbox user-data-modal-window__icon-checkbox--not-checked"
+                width="16"
+                height="15"
+              >
+                <use href="./img/symbol-defs.svg#icon-blackbox"></use>
+              </svg>
+              <svg
+                class="user-data-modal-window__icon-checkbox user-data-modal-window__icon-checkbox--checked"
+                width="16"
+                height="15"
+              >
+                <use href="./img/symbol-defs.svg@icon-check"></use>
+              </svg>
+            </label>
+          </div>
+
+          <button class="button button--active button--user-data-modal-window" type="submit">
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

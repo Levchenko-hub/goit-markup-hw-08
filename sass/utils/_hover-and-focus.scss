@@ -1,0 +1,30 @@
+@mixin hov-foc-effect-color() {
+  transition: color 250ms $transform-funct;
+  &:hover,
+  &:focus {
+    color: $primary-accent-clr;
+  }
+  &:focus {
+    outline: 2px solid $primary-accent-clr;
+  }
+}
+@mixin hov-foc-effect-txt-bg($color, $bg-color) {
+  transition: color 250ms $transform-funct, background-color 250ms $transform-funct;
+  &:hover,
+  &:focus {
+    color: $color;
+    background-color: $bg-color;
+  }
+  &:focus {
+    outline: 2px solid $primary-accent-clr;
+  }
+}
+@mixin hov-foc-effect-border() {
+  &:hover,
+  &:focus {
+    border-color: $primary-accent-clr;
+  }
+  &:focus {
+    outline: 2px solid $primary-accent-clr;
+  }
+}
